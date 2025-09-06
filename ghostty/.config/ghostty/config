@@ -1,0 +1,23 @@
+# Terminal settings
+background-blur = true
+background-opacity = 0.55
+background = "#000000"
+foreground = "#ffffff"
+# window-height = 510
+# window-width = 1640
+mouse-hide-while-typing = true
+term = xterm-256color
+
+# Cursor settings
+shell-integration-features = no-cursor
+cursor-style = "block"
+cursor-style-blink = false
+
+# # Macos Icon settings
+# macos-titlebar-proxy-icon = hidden
+# title = " "
+# macos-icon = custom-style
+# macos-icon-frame = aluminum
+# macos-icon-ghost-color = F8F8FF
+# macos-icon-screen-color = 000000
+
