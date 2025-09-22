@@ -11,7 +11,6 @@ alias :q='exit'
 alias bashprofile='nvim ~/.bash_profile'
 alias bashrc='nvim ~/.bashrc'
 alias vimrc='nvim ~/.vimrc'
-alias nvimrc='nvim ~/.nvimrc'
 alias ghostrc='nvim ~/.config/ghostty/config'
 alias tmrc='nvim ~/.tmux.conf'
 alias tmre='tmux source-file ~/.tmux.conf'
@@ -49,9 +48,6 @@ git_repo_name() {
 
 PS1='$(in_git_repo && printf "\n\[\e[38;5;244m\]%s \[\e[38;5;215m\]%s\[\033[0m\]" "$(git_repo_name)" "$(git_branch)")\
 \n\[\e[38;5;110m\]\u\[\033[0m\]@\[\e[38;5;110m\]\h \[\e[38;5;229m\]\w\[\033[0m\]\n\[\e[38;5;114m\]\$ \[\033[0m\]'
-
-[ -f "$HOME/google-cloud-sdk/path.bash.inc" ] && source "$HOME/google-cloud-sdk/path.bash.inc"
-[ -f "$HOME/google-cloud-sdk/completion.bash.inc" ] && source "$HOME/google-cloud-sdk/completion.bash.inc"
 
 if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
   tmux attach -t main || tmux new -s main

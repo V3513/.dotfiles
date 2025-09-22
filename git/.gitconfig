@@ -1,0 +1,12 @@
+[user]
+  email = [EMAIL_ADDRESS]
+  name = [NAME]
+[core]
+	editor=nvim
+[alias]
+  co = checkout
+  st = status
+  graph = log --graph --date-order -C -M --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --all --date=short
+  unstage = restore --staged
+[push]
+  default = current
