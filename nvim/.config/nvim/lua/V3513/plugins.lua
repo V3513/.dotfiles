@@ -184,21 +184,6 @@ require("lazy").setup({
     config = function()
       vim.g["deoplete#enable_at_startup"] = 1
     end,
-  },
-
-  -- Goose + markdown rendering
-  {
-    "azorng/goose.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      {
-        "MeanderingProgrammer/render-markdown.nvim",
-        opts = { anti_conceal = { enabled = false } },
-      },
-    },
-    config = function()
-      require("goose").setup({})
-    end,
-  },
+  }
 }, {})
 
