@@ -30,7 +30,7 @@ alias dfj='docker compose down --volumes && docker system prune -a -f'
 
 alias tmain='tmux attach -t main'
 
-PS1='\[\e[38;5;117m\]\u\[\e[38;5;147;2m\]@\[\e[0;38;5;111m\]\h\[\e[0m\] \[\e[38;5;229;3m\]\w\n\[\e[0;38;5;34m\]\\$\[\e[0m\] '
+PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\e[38;5;67m\]\u\[\e[0m\]@\[\e[38;5;67m\]\h\[\e[0m\] \[\e[38;5;214m\]\w\[\e[0m\] (\[\e[38;5;208m\]${PS1_CMD1}\[\e[0m\])\n\[\e[38;5;28m\]\\$\[\e[0m\] '
 
 if command -v tmux &>/dev/null && [ -z "$TMUX" ]; then
   tmux attach -t main || tmux new -s main
