@@ -3,6 +3,7 @@ background-blur = true
 background-opacity = 0.55
 background = "#000000"
 foreground = "#ffffff"
+window-decoration = none
 # window-height = 510
 # window-width = 1640
 mouse-hide-while-typing = true
