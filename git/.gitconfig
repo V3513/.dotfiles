@@ -1,8 +1,8 @@
 [user]
-  email = [EMAIL_ADDRESS]
+  email = [EMAIL]
   name = [NAME]
 [core]
-	editor=nvim
+	editor=vim
 [alias]
   co = checkout
   st = status
