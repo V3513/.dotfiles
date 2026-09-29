@@ -2,7 +2,7 @@
   email = [EMAIL]
   name = [NAME]
 [core]
-	editor=vim
+	editor = vim
 [alias]
   co = checkout
   st = status
