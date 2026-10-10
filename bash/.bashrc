@@ -22,7 +22,7 @@ alias l='ls -CF'
 
 alias shell='echo $SHELL'
 alias shells='cat /etc/shells'
-
+alias speakmute='echo 0 | sudo tee /sys/class/leds/platform::mute/brightness'
 alias micmute='echo 0 | sudo tee /sys/class/leds/platform::micmute/brightness'
 alias pingg='ping google.com'
 alias python='python3'
@@ -55,4 +55,3 @@ short_pwd() {
 
 PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'
 PS1='\[\e[38;5;67m\]\u\[\e[0m\]@\[\e[38;5;67m\]\h\[\e[0m\] \[\e[38;5;214m\]$(short_pwd)\[\e[0m\] (\[\e[38;5;208m\]${PS1_CMD1}\[\e[0m\])\n\[\e[38;5;28m\]\\$\[\e[0m\] '
-

@@ -33,6 +33,8 @@ require("lazy").setup({
   -- Git signs
   {
     "lewis6991/gitsigns.nvim",
+    tag = "v1.0.2",
+    pin = true,
     opts = {
       signs = {
         add = { text = "+" },
