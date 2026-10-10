@@ -1,6 +1,6 @@
 [user]
-  email = [EMAIL]
-  name = [NAME]
+  email = {EMAIL}
+  name = {NAME}
 [core]
 	editor = vim
 [alias]
